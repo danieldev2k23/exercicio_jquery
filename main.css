@@ -1,0 +1,79 @@
+/* Cores neon */
+body {
+    background-color: #283645; /* Azul royal escuro */
+    color: #fff; /* Branco */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 600px; /* Reduzindo a largura para se adequar melhor a dispositivos menores */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #304352; /* Azul royal médio */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00FFC9; /* Ciano neon */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Centralizando o título */
+}
+
+form {
+    display: flex;
+    align-items: center; /* Centralizando verticalmente */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #212D39; /* Azul royal escuro */
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #425A6c;
+    margin-right: 10px; /* Espaçamento entre a entrada de texto e o botão */
+}
+
+button#botao-adicionar,
+button#botao-filtro-todas,
+button#botao-filtro-pendentes,
+button#botao-filtro-feitas,
+button[type="submit"],
+button#botao-fechar-modal {
+    padding: 15px 30px; /* Aumentando o espaço interno do botão */
+    background-color: #00FFC9; /* Ciano neon */
+    color: #283645; /* Azul royal escuro */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+button[type="submit"]:hover {
+    background-color: #00e0b7; /* Ciano neon mais claro ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #425A6c; /* Azul royal médio */
+    border: 1px solid #212D39; /* Azul royal escuro */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Alteração do cursor ao passar por cima */
+}
+
+li.concluida span {
+    text-decoration: line-through; /* Adicionando linha sobre o texto quando concluído */
+}

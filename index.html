@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas Pro Neon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.8.0/flatpickr.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <form id="formulario">
+            <input type="text" id="tarefa" placeholder="Digite sua tarefa" required>
+            <button type="button" id="botao-adicionar">Adicionar</button>
+        </form>
+
+        <div class="filtros">
+            <button id="botao-filtro-todas" class="filtro-ativo">Todas</button>
+            <button id="botao-filtro-pendentes">Pendentes</button>
+            <button id="botao-filtro-feitas">Feitas</button>
+        </div>
+
+        <ul id="lista-tarefas"></ul>
+
+        <div id="modal-edicao" class="modal">
+            <div class="modal-conteudo">
+                <h2>Editar Tarefa</h2>
+                <form id="formulario-edicao">
+                    <input type="hidden" id="id-tarefa-edicao">
+                    <input type="text" id="descricao-edicao" placeholder="Descrição da Tarefa" required>
+                    <input type="text" id="data-edicao" placeholder="Data de Vencimento (opcional)" class="datepicker">
+                    <button type="submit">Salvar</button>
+                </form>
+                <button id="botao-fechar-modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.8.0/flatpickr.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
